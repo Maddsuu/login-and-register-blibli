@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo</title>
+    <link rel="shortcut icon" href="img/unnamed-removebg-preview.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <main class="container d-flex justify-content-center align-items-center py-3 py-md-0 h-100">
+        <div class="shadow rounded-4 px-3 overflow-hidden">
+            <div class="row mx-md-5">
+                <div class="col-md-6 d-flex justify-content-center align-items-center my-3 login-img">
+                    <img src="img/desktop-login.50a5a8ff.png" alt="Login Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 my-3">
+                    <div>
+                        <h3 class="text-primary text-center mb-4">Daftar di Blibli</h3>
+                        <form action="" class="shadow p-3 rounded-3">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control border-0" id="floatingNama" placeholder="Nama Lengkap">
+                                <label for="floatingNama">Nama Lengkap</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control border-0 email" id="floatingInput" placeholder="Email/nomor HP">
+                                <label for="floatingInput">Email/nomor HP</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control border-0 password" id="floatingPassword" placeholder="Kata Sandi">
+                                <label for="floatingPassword">Kata Sandi</label>
+                                <i id="togglePw"></i>
+                            </div>
+                        <div class="text-center"><button class="btn btn-primary w-30 rounded-5 mt-3 px-5 py-2 tombol">Daftar</button></div>
+                        </form>
+                        <div class="mt-4 text-center">
+                            <div>
+                                <button class="mx-2 btn2 rounded-3 shadow-sm align-items-center"><img src="img/Facebook_icon_social_media-removebg-preview.png" alt="" width="25px" class="m-1">Facebook</button>
+                                <button class="mx-2 btn2 rounded-3 shadow-sm"><img src="img/Home-removebg-preview.png" alt="" width="25px" class="m-1"> Google</button>
+                            </div>
+                            <p class="mt-3 small text-secondary">Sudah punya akun? <a href="index.html" class="text-primary">Masuk</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="forgotPassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4 ">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Buat kata sandi baru</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <span class="text-secondary">Masukkan email/nomor HP yang terdaftar untuk buat kata sandi baru.</span>
+                <div class="form-floating mb-3 mt-4">
+                  <input type="email" class="form-control border-0" id="floatingInput" placeholder="Email/nomor HP">
+                  <label for="floatingInput">Email/nomor HP</label>
+
+              </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary w-100 rounded-5">Lanjutkan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="masukhp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4 ">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Verifikasi nomor HP</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control border-0" id="floatingInput" placeholder="Nomor HP" maxlength="15">
+                  <label for="floatingInput">Nomor HP</label>
+                  <span class="text-secondary">0 / 15</span>
+              </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary w-100 rounded-5">Verifikasi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="fung.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo</title>
+    <link rel="shortcut icon" href="img/unnamed-removebg-preview.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <main class="container d-flex justify-content-center align-items-center py-3 py-md-0 h-100">
+        <div class="shadow rounded-4 px-3 overflow-hidden">
+            <div class="row mx-md-5">
+                <div class="col-md-6 d-flex justify-content-center align-items-center my-3 login-img">
+                    <img src="img/desktop-login.50a5a8ff.png" alt="Login Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 my-3">
+                    <div>
+                        <h3 class="text-primary text-center mb-4">Masuk ke akunmu</h3>
+                        <form action="" class="shadow p-3 rounded-3">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control border-0 email" id="floatingInput" placeholder="Email/nomor HP">
+                                <label for="floatingInput">Email/nomor HP</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control border-0 password" id="floatingPassword" placeholder="Kata Sandi">
+                                <label for="floatingPassword">Kata Sandi</label>
+                                <i id="togglePw"></i>
+                            </div>
+                            <a href="" class="text-primary" data-bs-toggle="modal" data-bs-target="#forgotPassword"><h6 class="h6 text-start mt-3">Lupa kata sandi?</h6></a>
+                        <div class="text-center"><button class="btn btn-primary w-30 rounded-5 mt-3 px-5 py-2 tombol">Masuk</button></div>
+                        <div class="mt-3 text-primary d-flex justify-content-around small gap-4 fw-medium text-center">
+                            <a href="" class="mx-2 text-primary" data-bs-toggle="modal" data-bs-target="#masukhp">
+                                <svg data-v-deb3d526="" xmlns="http://www.w3.org/2000/svg" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="24" height="24" viewBox="0 0 24 24" data-v-42947003=""><path d="M12.3048 12.3648C12.1049 12.4547 11.8751 12.4547 11.6752 12.3648L2 7.8576V6.7283C2 5.22923 3.21939 4.00999 4.71864 4H19.2714C20.7706 4 21.99 5.21924 21.99 6.71831V7.8476L12.3048 12.3648ZM11.985 13.4341C12.2349 13.4341 12.4948 13.3841 12.7246 13.2742H12.7346L22 8.95688V17.2817C22 18.7808 20.7806 20 19.2814 20H4.71864C3.21939 20 2 18.7808 2 17.2817V8.95688L11.2454 13.2742C11.4853 13.3841 11.7351 13.4341 11.985 13.4341Z"></path></svg>
+                                Masuk dengan nomor HP
+                            </a>
+                            <a href="" class="mx-2 text-primary d-md-block d-none">
+                                <svg data-v-deb3d526="" xmlns="http://www.w3.org/2000/svg" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="24" height="24" viewBox="0 0 24 24" data-v-42947003=""><path d="M19.4911 2H15.4931C14.1131 2 12.9944 3.11929 12.9944 4.5V8.5C12.9944 9.88071 14.1131 11 15.4931 11H19.4911C20.8711 11 21.9898 9.88071 21.9898 8.5V4.5C21.9898 3.11929 20.8711 2 19.4911 2ZM8.49668 13H4.49872C3.11872 13 2 14.1193 2 15.5V19.5C2 20.8807 3.11872 22 4.49872 22H8.49668C9.87669 22 10.9954 20.8807 10.9954 19.5V15.5C10.9954 14.1193 9.87669 13 8.49668 13ZM17.9621 14.01C17.9621 13.45 18.4118 13 18.9715 13L18.9815 13.01C20.6507 13.01 22 14.37 22 16.03C22 16.59 21.5502 17.04 20.9905 17.04C20.4308 17.04 19.981 16.59 19.981 16.03C19.981 15.47 19.5313 15.02 18.9715 15.02C18.4118 15.02 17.9621 14.57 17.9621 14.01ZM20.9903 17.98C20.4306 17.98 19.9808 18.43 19.9808 18.99C19.9808 19.55 19.531 20 18.9713 20H16.0028C15.4531 20 14.9934 19.55 14.9934 18.99V16.02C14.9934 15.73 15.1233 15.45 15.3432 15.26C15.5231 15.1 15.763 15.02 16.0028 15.02C16.5626 15.02 17.0123 14.57 17.0123 14.01C17.0123 13.45 16.5626 13 16.0028 13C15.2732 13 14.5736 13.26 14.0339 13.73C13.3742 14.3 12.9944 15.14 12.9944 16.01V18.98C12.9944 20.64 14.3437 22 16.0128 22H18.9813C20.6405 22 21.9998 20.65 21.9998 18.98C21.9998 18.42 21.55 17.97 20.9903 17.97V17.98ZM5.01846 2H7.97695H7.98694C9.65609 2 11.0054 3.36 11.0054 5.02V7.99C11.0054 9.66 9.64609 11.01 7.98694 11.01H5.01846C3.34931 11.01 2 9.65 2 7.99V5.02C2 3.35 3.34931 2 5.01846 2ZM7.97695 8.99C8.53666 8.99 8.98643 8.53 8.98643 7.98L8.99643 7.99V5.02C8.99643 4.46 8.53666 4.01 7.98694 4.01H5.01846C4.45874 4.01 4.00897 4.47 4.00897 5.02V7.98C4.00897 8.54 4.46874 8.99 5.01846 8.99H7.97695Z"></path></svg>
+                                Masuk dengan QR <span class="bg-danger rounded-3 px-1 text-white">Baru</span>
+                            </a>
+                        </div>
+                        </form>
+                        <div class="mt-4 text-center">
+                            <div>
+                                <button class="mx-2 btn2 rounded-3 shadow-sm align-items-center"><img src="img/Facebook_icon_social_media-removebg-preview.png" alt="" width="25px" class="m-1">Facebook</button>
+                                <button class="mx-2 btn2 rounded-3 shadow-sm"><img src="img/Home-removebg-preview.png" alt="" width="25px" class="m-1"> Google</button>
+                            </div>
+                            <p class="mt-3 small text-secondary">Tidak punya akun? <a href="register.html" class="text-primary">Daftar</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="forgotPassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4 ">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Buat kata sandi baru</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <span class="text-secondary">Masukkan email/nomor HP yang terdaftar untuk buat kata sandi baru.</span>
+                <div class="form-floating mb-3 mt-4">
+                  <input type="email" class="form-control border-0" id="floatingInput" placeholder="Email/nomor HP">
+                  <label for="floatingInput">Email/nomor HP</label>
+
+              </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary w-100 rounded-5">Lanjutkan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="masukhp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4 ">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Verifikasi nomor HP</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control border-0" id="floatingInput" placeholder="Nomor HP" maxlength="15">
+                  <label for="floatingInput">Nomor HP</label>
+                  <span class="text-secondary">0 / 15</span>
+              </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary w-100 rounded-5">Verifikasi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="fung.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

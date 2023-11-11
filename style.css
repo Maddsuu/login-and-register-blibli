@@ -1,0 +1,69 @@
+
+
+body {
+    height: 100vh !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+input {
+    background: #F1F2F2 !important;
+    
+}
+
+input:hover {
+    background: #D8D9DA !important;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #0F6DEA !important;
+    box-shadow: none !important;
+}
+
+label::after {
+    background: none !important;
+    color: #0F6DEA !important;
+}
+
+.form-control:focus ~ label {
+    color: #0F6DEA !important;
+}
+
+.btn2 {
+    background: #ffffff;
+    border: none !important;
+}
+
+
+.shadow {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5) !important;
+}
+
+i {
+    content: url(img/eye.svg);
+    top: 18px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+}
+
+.eye-slash {
+    content: url(img/eyeslash.svg);
+}
+
+.tombol:disabled {
+    background: #d9dee3;
+    color: #6c757d;
+    border: 0 !important;
+}
+
+@media screen and (max-width: 767.20px) {
+    .login-img img {
+        content: url(img/loginregis_mobile_original_2.webp);
+    }
+}
